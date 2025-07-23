@@ -40,6 +40,7 @@ void device_info(std::ofstream &fs) {
       << "Threads per Warp                 : " << props.warpSize << "\n"
       << "Estimated Warps per SM           : " << warps_per_sm << "\n"
       << "Max Registers per Block          : " << props.regsPerBlock << "\n"
+      << "Max Registers per SM          : " << props.regsPerMultiprocessor << "\n"
       << "Max Shared Mem per Block         : " << props.sharedMemPerBlock / 1024
       << " KB\n"
       << "Shared Mem per Multiprocessor    : "
